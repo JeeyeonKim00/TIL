@@ -13,11 +13,11 @@ import json
 class GmarketBestPipeline:
 
     def __send_slack(self, msg):
-        WEBHOOK_URL = "https://hooks.slack.com/services/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"
+        WEBHOOK_URL = ####
 
         payload = {
             "channel": "#잡담",
-            "username": "소미노봇",
+            "username": "알림봇",
             "text": msg
         }
 
