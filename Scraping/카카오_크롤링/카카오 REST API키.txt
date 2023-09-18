@@ -1,6 +1,0 @@
-카카오 REST API키: 
-c3e0ca6a0cbbf027074184adb68be063
-
-GET http://dapi.kakao.com/v2/search/web
-
-
