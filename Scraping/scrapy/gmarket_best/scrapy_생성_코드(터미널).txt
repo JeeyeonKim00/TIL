@@ -1,0 +1,20 @@
+폴더 들어가서
+
+scrapy startproject gmarket_best (프로젝트를 만든것)
+cd gmarket_best
+scrapy genspider GmarketBestSellers gmarket.co.kr
+
+Gmarket~~~파일명을 spider로 바꾸고  class명도 바꿔라.
+
+settings.py의 ITME_PIPELINES =크롤링한 데이터의 후처리 ex) db에 넣는다, 슬랙 알림을 울린다...
+
+items.py에서 모델 형성 (수집할 데이터 설계): 모으고 싶은 데이터 항목을 넣음.
+spider.py
+
+
+11
+scrapy crawl GmarketBestSellers
+
+크롤링 하고 후처리 위해 pipeline사용
+
+scrapy crawl GmarketBestSellers -o gmarket.csv
